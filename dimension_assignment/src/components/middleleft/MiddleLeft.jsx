@@ -11,7 +11,6 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { FaChevronDown } from "react-icons/fa6";
-import BubbleChart from "../BubbleChart";
 
 function MiddleLeft() {
   return (
@@ -43,7 +42,6 @@ function MiddleLeft() {
           </MenuList>
         </Menu>
       </Box>
-      <BubbleChart />
     </Card>
   );
 }
