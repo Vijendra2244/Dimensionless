@@ -1,0 +1,7 @@
+.lower{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1rem;
+}

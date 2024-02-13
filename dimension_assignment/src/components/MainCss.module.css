@@ -1,0 +1,6 @@
+.mainApp{
+    display: flex;
+    width: 80%;
+    margin: 1rem auto;
+    gap: 1rem;
+}
