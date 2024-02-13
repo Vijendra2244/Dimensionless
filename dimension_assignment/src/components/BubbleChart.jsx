@@ -5,7 +5,7 @@ function BubbleChart() {
   const chartRef = useRef(null);
 
   useEffect(() => {
-    const chartInstance = chartRef.current;
+    const chartInstance = chartRef.current.chartInstance;
 
     return () => {
       if (chartInstance) {
@@ -45,14 +45,22 @@ function BubbleChart() {
 
   const options = {
     scales: {
-      y: {
-        min: 0,
-        max: 50,
-      },
-      x: {
-        min: 0,
-        max: 50,
-      },
+      yAxes: [
+        {
+          ticks: {
+            min: 0,
+            max: 50,
+          },
+        },
+      ],
+      xAxes: [
+        {
+          ticks: {
+            min: 0,
+            max: 50,
+          },
+        },
+      ],
     },
   };
 
