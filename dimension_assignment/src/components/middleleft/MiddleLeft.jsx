@@ -11,6 +11,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { FaChevronDown } from "react-icons/fa6";
+import BubbleChart from "../BubbleChart";
 
 function MiddleLeft() {
   return (
@@ -19,7 +20,7 @@ function MiddleLeft() {
         <Text>News & Data Flow</Text>
         <Menu>
           <MenuButton
-          w="15%"
+            w="15%"
             p="0.3rem"
             transition="all 0.2s"
             borderRadius="md"
@@ -42,6 +43,7 @@ function MiddleLeft() {
           </MenuList>
         </Menu>
       </Box>
+      <BubbleChart />
     </Card>
   );
 }
